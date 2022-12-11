@@ -23,6 +23,15 @@ final class Module_YouTube extends GDO_Module
 	{
 		return [
 			GDO_YTVideo::class,
+			GDO_YTPlaylist::class,
+			GDO_YTPlaylistVideo::class,
+		];
+	}
+	
+	public function getDependencies(): array
+	{
+		return [
+			'File',
 		];
 	}
 	
