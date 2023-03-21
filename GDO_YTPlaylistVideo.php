@@ -10,7 +10,7 @@ use GDO\Core\GDT_Object;
  */
 final class GDO_YTPlaylistVideo extends GDO
 {
-	
+
 	public function gdoColumns(): array
 	{
 		return [
@@ -19,5 +19,5 @@ final class GDO_YTPlaylistVideo extends GDO
 			GDT_Object::make('ytlv_video')->table(GDO_YTVideo::table())->notNull(),
 		];
 	}
-	
+
 }

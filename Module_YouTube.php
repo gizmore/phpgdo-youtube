@@ -7,18 +7,19 @@ use GDO\Core\GDT_Secret;
 
 /**
  * Youtube Module. Collects YT links. Optionally backs them up.
- * 
+ *
  * @author gizmore
  */
 final class Module_YouTube extends GDO_Module
 {
+
 	public int $priority = 49;
-	
+
 	public function onLoadLanguage(): void
 	{
 		$this->loadLanguage('lang/yt');
 	}
-	
+
 	public function getClasses(): array
 	{
 		return [
@@ -27,14 +28,14 @@ final class Module_YouTube extends GDO_Module
 			GDO_YTPlaylistVideo::class,
 		];
 	}
-	
+
 	public function getDependencies(): array
 	{
 		return [
 			'File',
 		];
 	}
-	
+
 	public function getConfig(): array
 	{
 		return [
@@ -43,5 +44,5 @@ final class Module_YouTube extends GDO_Module
 // 			GDT_Checkbox::make('yt_confirm_add')->initial('0'),
 		];
 	}
-	
+
 }

@@ -5,7 +5,7 @@ use GDO\Core\GDT_String;
 
 final class GDT_YTToken extends GDT_String
 {
-	
+
 	protected function __construct()
 	{
 		parent::__construct();
@@ -13,5 +13,5 @@ final class GDT_YTToken extends GDT_String
 		$this->max(16);
 		$this->icon('video');
 	}
-	
+
 }

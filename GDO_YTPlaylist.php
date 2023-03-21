@@ -3,19 +3,20 @@ namespace GDO\YouTube;
 
 use GDO\Core\GDO;
 use GDO\Core\GDT_AutoInc;
-use GDO\Core\GDT_Token;
-use GDO\UI\GDT_Title;
-use GDO\Core\GDT_Text;
 use GDO\Core\GDT_CreatedAt;
 use GDO\Core\GDT_CreatedBy;
+use GDO\Core\GDT_Text;
+use GDO\Core\GDT_Token;
+use GDO\UI\GDT_Title;
 
 /**
  * A YouTube video. @TODO Add own votes.
- * 
+ *
  * @author gizmore
  */
 final class GDO_YTPlaylist extends GDO
 {
+
 	public function gdoColumns(): array
 	{
 		return [
@@ -27,5 +28,5 @@ final class GDO_YTPlaylist extends GDO
 			GDT_CreatedBy::make('ytl_creator'),
 		];
 	}
-	
+
 }
